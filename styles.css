@@ -65,9 +65,9 @@ nav {
   color: #ff9940;
 }
 
-@media (max-width: 500px) {
+@media only screen and (max-device-width: 500px) {
   .landing {
-    background: url('nigth-sky-background-mob.webp') no-repeat center center fixed;
+    background: url('night-sky-background-mobile.webp') no-repeat center center fixed !important;
   }
 }
 
