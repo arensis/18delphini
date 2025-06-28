@@ -67,7 +67,7 @@
 
     @media only screen and (max-device-width: 500px) {
       .landing {
-        background: url('night-sky-background-mobile.webp') no-repeat center center fixed !important;
+        background: url('night-sky-background-mobile.webp') no-repeat !important;
       }
 
       .cockpit-ui {
