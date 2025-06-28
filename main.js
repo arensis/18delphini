@@ -32,6 +32,6 @@
   });
 
 window.addEventListener('scroll', function () {
-  const hero = document.querySelector('.hero');
-  hero.style.opacity = 1 - window.scrollY / 500;
+  const landing = document.querySelector('.landing');
+  landing.style.opacity = 1 - window.scrollY / 500;
 });
