@@ -80,7 +80,7 @@
         font-size: 0.6em !important;
       }
 
-      .hero {
+      .landing {
         padding-top: 0% !important;
         row-gap: 10% !important;
       }
@@ -127,7 +127,7 @@
       }
     }
 
-    .hero {
+    .landing {
       height: 100vh;
       background: url('night-sky-background-xl.jpg') no-repeat center center fixed;
       background-size: cover;
