@@ -13,7 +13,7 @@
   <meta property="og:locale" content="es_ES">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Web Oficial de 18 Delphini">
-  <meta property="og:description" content="Web oficial de 18 Delphini">
+  <meta property="og:description" content="18 Delphini es un proyecto musical inspirado por la estrella real HR 8030, oficialmente nombrada “Musica”, pretende ser un conjunto de obras musicales sin una agrupación por estilos, abierta sólo a la creatividad, la esencia de la música.">
   <meta property="og:url" content="https://18delphini.es">
   <meta property="og:site_name" content="">
   <meta property="og:image" content="https://18delphini.es/ogg-imag.png">
@@ -26,24 +26,35 @@
     <div class="nav-logo">18 Delphini</div>
     <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
     <div class="nav-links">
-      <a href="#">Inicio</a>
+      <a href="#inicio">Inicio</a>
       <a href="#proyecto">Sobre el proyecto</a>
+      <a href='#contact'>Contacto</a>
     </div>
   </nav>
 
-  <div class="landing">
+  <section id="inicio" class="landing">
     <div class="title-section">
       <h1>18 Delphini</h1>
       <p>La música que viajó desde una estrella</p>
       <a href="#proyecto">En fase de inserción orbital</a>
     </div>
-  </div>
+  </section>
 
-  <div id="proyecto" class="section">
+  <section id="proyecto" class="section">
     <h2>Sobre el proyecto</h2>
     <p>18 Delphini es un proyecto musical inspirado por la estrella real HR 8030, oficialmente nombrada “Musica”, pretende ser un conjunto de obras musicales sin una agrupación por estilos, abierta sólo a la creatividad, la esencia de la música.</p>
     <p>El proyecto se encuentra en su fase incial y sacará su primer sencillo en los próximos meses</p>
-  </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2 style="color: #f47b20;">Contacto</h2>
+    <p style="color: #ccc; font-size: 1.1em; max-width: 700px; margin: 0 auto 20px;">
+      ¿Eres de prensa o estás interesado en colaborar?
+    </p>
+    <a href="mailto:info@18delphini.com" class="btn-primary">
+      Contacto para prensa y colaboraciones
+    </a>
+  </section>
 
   <footer class="footer">
     <div class="social-icons">
