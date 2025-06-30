@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Poppins:wght@300;400;600&display=swap');
 
+@font-face {
+  font-family: 'Nasalization';
+  src: local("NasalizationRg") url('nasalization-rg.eot');
+  src: local("NasalizationRg") url('nasalization-rg.eot?#iefix') format('embedded-opentype'),
+       local("NasalizationRg") url('nasalization-rg.woff2') format('woff2'),
+       local("NasalizationRg") url('nasalization-rg.woff') format('woff'),
+       local("NasalizationRg") url('nasalization-rg.ttf')  format('truetype'),
+       local("NasalizationRg") url('nasalization-rg.svg#Nasalization') format('svg');
+}
+
+
     html, body {
       margin: 0;
       padding: 0;
@@ -131,7 +142,7 @@
 
     .landing {
       height: 100vh;
-      background: url('night-sky-background-xl.jpg') no-repeat center center fixed;
+      background: url('night-sky-background-xl.webp') no-repeat center center fixed;
       background-size: cover;
       display: flex;
       flex-direction: column;
@@ -167,7 +178,7 @@
       text-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
     }
 
-    .title-section a {
+    .btn-primary {
       display: inline-block;
       margin-top: 24px;
       padding: 14px 32px;
@@ -179,11 +190,30 @@
       box-shadow: 0 0 20px rgba(244, 123, 32, 0.5);
       font-family: 'Orbitron', sans-serif;
       transition: all 0.3s ease;
+      cursor: pointer;
     }
 
-    .title-section a:hover {
+    .btn-primary:hover {
       transform: scale(1.05);
       box-shadow: 0 0 25px rgba(255, 153, 64, 0.9);
+    }
+
+    .basic-link {
+      color: #ff9940; /* naranja vibrante */
+      text-decoration: none;
+      transition: color 0.3s ease, border-bottom 0.3s ease;
+      border-bottom: 1px dashed transparent;
+    }
+
+    .basic-link:hover {
+      color: #ffaa5a;
+      border-bottom: 1px dashed #ffaa5a;
+    }
+
+    .basic-link:focus {
+      outline: none;
+      color: #ffd7a0;
+      border-bottom: 1px solid #ffd7a0;
     }
 
     .cockpit-ui {
@@ -410,25 +440,6 @@
       border-top: 2px solid #222;
     }
 
-    .footer .social-icons {
-      margin-bottom: 16px;
-    }
-
-    .footer .social-icons a {
-      margin: 0 10px;
-      display: inline-block;
-      transition: transform 0.3s;
-    }
-
-    .footer .social-icons a:hover {
-      transform: scale(1.2);
-    }
-
-    .footer img {
-      width: 32px;
-      height: 32px;
-    }
-
     .footer p {
       color: #888;
       font-size: 0.9em;
@@ -444,4 +455,34 @@
       border-radius: 3px;
       box-shadow: 2px 1px 2px 0px #00000066;
       z-index: 1;
+    }
+
+    .icono-social {
+      width: 32px;
+      height: 32px;
+      fill: #ff9940;
+      transition: fill 0.3s ease, transform 0.3s ease, filter 0.3s ease;
+      cursor: pointer;
+      margin: 0 8px;
+    }
+
+    .icono-social:hover {
+      fill: #ffaa5a;
+      transform: scale(1.1);
+      filter: drop-shadow(0 0 6px #ffaa5a);
+    }
+
+    a.icon-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      padding: 6px;
+      border-radius: 50%;
+      background-color: transparent;
+      transition: background 0.3s ease;
+    }
+
+    a.icon-link:hover {
+      background-color: rgba(255, 153, 64, 0.1);
     }
