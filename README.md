@@ -1,4 +1,6 @@
-# 18 Delphini official web page
+<center>
+    <img src="./assets//images/ogg-imag.png" style="width: 500px; height: auto">  
+</center>
 
 ## Deploy into docker container
 
