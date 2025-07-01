@@ -1,0 +1,98 @@
+@media only screen and (max-device-width: 500px) {
+  .banner {
+    background: url('assets/images/night-sky-background-mobile.webp') no-repeat !important;
+    background-size: cover!important;
+    background-position: center !important;
+  }
+
+  .banner {
+    padding-top: 0% !important;
+    row-gap: 10% !important;
+  }
+
+  .title-section h1 {
+    font-size: 3rem !important;
+  }
+
+  .title-section p {
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+      height: 100vh;
+      background: url('assets/images/night-sky-background-xl.webp') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #f6f3ff;
+      position: relative;
+      text-align: center;
+      z-index: 1;
+      animation: parallaxMove 20s infinite linear;
+      transition: opacity 0.5s ease;
+      padding-top: 80px;
+    }
+
+    .title-section {
+      animation: fadeInUp 1.2s ease forwards;
+      z-index: 2;
+    }
+
+    .title-section h1 {
+      font-size: 5em;
+      margin: 0;
+      text-shadow: 0 0 20px #000;
+      font-family: 'Orbitron', sans-serif;
+      font-weight: 700;
+    }
+
+    .title-section p {
+      font-size: 1.6em;
+      margin: 10px 0;
+      color: #d3c9ff;
+      font-weight: 300;
+      text-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+    }
+}
+
+.banner {
+  height: 100vh;
+  background: url('../assets/images/night-sky-background-xl.webp') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #f6f3ff;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  animation: parallaxMove 20s infinite linear;
+  transition: opacity 0.5s ease;
+  padding-top: 80px;
+}
+
+.title-section {
+  animation: fadeInUp 1.2s ease forwards;
+  z-index: 2;
+}
+
+.title-section h1 {
+  font-size: 5em;
+  margin: 0;
+  text-shadow: 0 0 20px #000;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+}
+
+.title-section p {
+  font-size: 1.6em;
+  margin: 10px 0;
+  color: #d3c9ff;
+  font-weight: 300;
+  text-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+}

@@ -1,14 +1,12 @@
-  // Cierra el menú móvil al hacer clic en un enlace
-  document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.nav-links a').forEach(link => {
-      link.addEventListener('click', () => {
-        console.log('detect click');
-        document.querySelector('.nav-links').classList.remove('open');
-      });
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      console.log('detect click');
+      document.querySelector('.nav-links').classList.remove('open');
     });
-  })
+  });
 
-  // Scrollspy: resalta el enlace activo según el scroll
+    // Scrollspy: resalta el enlace activo según el scroll
   const sections = document.querySelectorAll("section[id]");
   const navItems = document.querySelectorAll(".nav-links a");
 
@@ -30,8 +28,4 @@
       }
     });
   });
-
-window.addEventListener('scroll', function () {
-  const landing = document.querySelector('.landing');
-  landing.style.opacity = 1 - window.scrollY / 500;
 });
