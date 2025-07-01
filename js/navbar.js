@@ -1,3 +1,7 @@
+function openMenu() {
+  document.querySelector('.nav-links').classList.toggle('open');
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
